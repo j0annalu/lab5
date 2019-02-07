@@ -17,17 +17,15 @@
 </head>
 
 <body>
-	<div class="container">
+	<div class="friends">
 	<h1>My HCI Friends</h1>
 
 	{{#each friends}}
 	<div class="friends" > 
-		<hr></hr>
-		<a href="friends/{{this.name}}" class="thumbnail">
-	    <img src="{{this.imageURL}}">
-		</a>
-		<h2>{{this.name}}</h2>
+		<img src="{{this.imageURL}}" class="img-responsive">
+		<a href="#" class ="name"><h2>{{this.name}}</h2></a>
 		<p>{{this.description}}</p>
+		<hr></hr>
 	</div>
 	{{/each}}
 
